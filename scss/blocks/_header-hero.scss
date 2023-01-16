@@ -1,0 +1,82 @@
+/* SITE HEADER HERO WRAPPER */
+.site-header-hero__wrapper {
+  background: url("../../images/light-img-bg.png") no-repeat center / cover;
+}
+
+/* SITE HEADER */
+.site-header {
+  padding: 40px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 30px;
+}
+
+/* LOGO */
+.logo__img {
+  width: 235px;
+  height: auto;
+  max-width: 100%;
+  transition: opacity .4s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+/* SITENAV */
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item {
+  &:not(:last-child) {
+    margin-right: 40px;
+  }
+}
+
+.sitenav__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+  transition: color .4s ease, opacity .4s ease;
+
+  &:hover {
+    color: var(--accent-color-green);
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+}
+
+/* HERO */
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  max-width: 464px;
+}
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  margin-bottom: 24px;
+}
+
+.hero__description {
+  margin-bottom: 34px;
+}
