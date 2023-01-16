@@ -26,7 +26,13 @@
   --text-color: #333;
   --secondary-text-color: #000;
   --accent-color-green: #0a775f;
-  --outline-color: var(--accent-color-green) ;
+  --accent-color-green--80: rgba(10, 119, 95, 0.8);
+  --accent-color-green--60: rgba(10, 119, 95, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
+  --outline-color: var(--accent-color-green);
+  --light-brown: #f3d7b7;
 }
 
 /* GLOBAL */
@@ -137,21 +143,25 @@ body {
   font-weight: 500;
   transition: opacity 0.4s ease;
 }
-.button:hover {
-  opacity: 0.8;
-}
-.button:active {
-  opacity: 0.6;
-}
 
 .button--green {
   background-color: var(--accent-color-green);
+}
+.button--green:hover {
+  background-color: var(--accent-color-green--80);
+}
+.button--green:active {
+  background-color: var(--accent-color-green--60);
+}
+
+.button--brown {
+  background-color: var(--accent-color-light-brown);
 }
 
 /* RETINA BGS */
 /* SITE HEADER HERO WRAPPER */
 .site-header-hero__wrapper {
-  background: #f3d7b7 url("../../images/light-img-bg.png") no-repeat center/cover;
+  background: var(--light-brown) url("../../images/light-img-bg.png") no-repeat center/cover;
 }
 
 /* SITE HEADER */

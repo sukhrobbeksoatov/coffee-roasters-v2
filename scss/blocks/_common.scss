@@ -4,7 +4,13 @@
   --text-color: #333;
   --secondary-text-color: #000;
   --accent-color-green: #0a775f;
-  --outline-color: var(--accent-color-green)
+  --accent-color-green--80: rgba(10, 119, 95, 0.8);
+  --accent-color-green--60: rgba(10, 119, 95, 0.6);
+  --accent-color-light-brown: #c99b67;
+  --accent-color-light-brown-80: rgba(201, 155, 103, 0.8);
+  --accent-color-light-brown-60: rgba(201, 155, 103, 0.6);
+  --outline-color: var(--accent-color-green);
+  --light-brown: #f3d7b7;
 }
 
 /* GLOBAL */
@@ -114,18 +120,22 @@ body {
   color: #fff;
   font-weight: 500;
   transition: opacity .4s ease;
-
-  &:hover {
-    opacity: 0.8;
-  }
-
-  &:active {
-    opacity: 0.6;
-  }
 }
 
 .button--green {
   background-color: var(--accent-color-green);
+
+  &:hover {
+    background-color: var(--accent-color-green--80);
+  }
+
+  &:active {
+    background-color: var(--accent-color-green--60);
+  }
+}
+
+.button--brown {
+  background-color: var(--accent-color-light-brown);
 }
 
 /* RETINA BGS */
