@@ -24,6 +24,8 @@
 :root {
   --bg-color: #fff;
   --text-color: #333;
+  --secondary-text-color: #000;
+  --accent-color-green: #0a775f;
 }
 
 /* GLOBAL */
@@ -72,7 +74,7 @@ body {
 /* CONTAINER */
 .container {
   width: 100%;
-  max-width: 1240px;
+  max-width: 1440px;
   margin: 0 auto;
   padding: 0 20px;
 }
@@ -127,10 +129,23 @@ body {
   border: none;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.button--green {
+  background-color: var(--accent-color-green);
 }
 
 /* RETINA BGS */
+/* SITE HEADER HERO WRAPPER */
+.site-header-hero__wrapper {
+  background: url("../../images/light-img-bg.png") no-repeat center/cover;
+}
+
 /* SITE HEADER */
 .site-header {
   padding: 40px 0;
@@ -140,14 +155,24 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 30px;
 }
 
+/* LOGO */
 .logo__img {
   width: 235px;
   height: auto;
   max-width: 100%;
+  transition: opacity 0.4s ease;
+}
+.logo__img:hover {
+  opacity: 0.8;
+}
+.logo__img:active {
+  opacity: 0.6;
 }
 
+/* SITENAV */
 .sitenav__list {
   display: flex;
   align-items: center;
@@ -162,4 +187,33 @@ body {
   font-size: 12px;
   font-weight: 700;
   color: var(--text-color);
+  transition: color 0.4s ease, opacity 0.4s ease;
+}
+.sitenav__link:hover {
+  color: var(--accent-color-green);
+}
+.sitenav__link:active {
+  opacity: 0.6;
+}
+
+/* HERO */
+.hero__wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.hero__content {
+  max-width: 464px;
+}
+
+.hero__heading {
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 1.2;
+  color: var(--secondary-text-color);
+  margin-bottom: 24px;
+}
+
+.hero__description {
+  margin-bottom: 34px;
 }/*# sourceMappingURL=main.css.map */
