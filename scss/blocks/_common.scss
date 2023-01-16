@@ -107,7 +107,15 @@ body {
   border: none;
   cursor: pointer;
   text-align: center;
-  text-decoration: none;
+  padding: 16px 24px;
+  text-transform: uppercase;
+  border-radius: 100px;
+  color: #fff;
+  font-weight: 500;
+}
+
+.button--green {
+  background-color: var(--accent-color-green);
 }
 
 /* RETINA BGS */
