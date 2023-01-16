@@ -143,7 +143,7 @@ body {
 /* RETINA BGS */
 /* SITE HEADER HERO WRAPPER */
 .site-header-hero__wrapper {
-  background: url("../../images/light-img-bg.png") no-repeat center/cover;
+  background: #f3d7b7, url("../../images/light-img-bg.png") no-repeat center/cover;
 }
 
 /* SITE HEADER */
