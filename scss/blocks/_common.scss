@@ -113,6 +113,15 @@ body {
   border-radius: 100px;
   color: #fff;
   font-weight: 500;
+  transition: opacity .4s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
 }
 
 .button--green {
