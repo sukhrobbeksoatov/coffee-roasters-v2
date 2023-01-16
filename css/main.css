@@ -1,7 +1,29 @@
+/* FONTS */
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-regular.woff2") format("woff2"), url("../fonts/roboto-v30-latin-regular.woff") format("woff");
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-500.woff2") format("woff2"), url("../fonts/roboto-v30-latin-500.woff") format("woff");
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/roboto-v30-latin-700.woff2") format("woff2"), url("../fonts/roboto-v30-latin-700.woff") format("woff");
+  font-style: normal;
+  font-weight: 700;
+  font-display: swap;
+}
 /* CUSTOM PROPS */
 :root {
-  --primary-bg-color: #fff;
-  --text-color: #000;
+  --bg-color: #fff;
+  --text-color: #333;
 }
 
 /* GLOBAL */
@@ -37,11 +59,12 @@ img {
 
 body {
   height: 100%;
-  font-family: "Arial", sans-serif;
+  font-family: "Roboto", "Arial", sans-serif;
   font-size: 16px;
+  font-weight: 400;
   line-height: 1.5;
   color: var(--text-color);
-  background-color: var(--primary-bg-color);
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
 }
@@ -107,4 +130,36 @@ body {
   text-decoration: none;
 }
 
-/* RETINA BGS *//*# sourceMappingURL=main.css.map */
+/* RETINA BGS */
+/* SITE HEADER */
+.site-header {
+  padding: 40px 0;
+}
+
+.site-header__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo__img {
+  width: 235px;
+  height: auto;
+  max-width: 100%;
+}
+
+.sitenav__list {
+  display: flex;
+  align-items: center;
+}
+
+.sitenav__item:not(:last-child) {
+  margin-right: 40px;
+}
+
+.sitenav__link {
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 700;
+  color: var(--text-color);
+}/*# sourceMappingURL=main.css.map */
