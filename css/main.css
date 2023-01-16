@@ -192,6 +192,7 @@ body {
 
 .sitenav__link {
   text-transform: uppercase;
+  white-space: nowrap;
   font-size: 12px;
   font-weight: 700;
   color: var(--text-color);
@@ -211,7 +212,8 @@ body {
 }
 
 .hero__content {
-  max-width: 464px;
+  max-width: 730px;
+  padding: 116px 116px 0 130px;
 }
 
 .hero__heading {
@@ -222,6 +224,18 @@ body {
   margin-bottom: 24px;
 }
 
-.hero__description {
+.hero__description:not(:last-child) {
   margin-bottom: 34px;
+}
+
+.hero__img {
+  max-width: 710px;
+  width: 100%;
+  height: 596px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.hero__img--index {
+  height: 696px;
 }/*# sourceMappingURL=main.css.map */
