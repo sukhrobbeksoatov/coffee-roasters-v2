@@ -4,6 +4,7 @@
   --text-color: #333;
   --secondary-text-color: #000;
   --accent-color-green: #0a775f;
+  --outline-color: var(--accent-color-green)
 }
 
 /* GLOBAL */
@@ -27,7 +28,7 @@ html {
 }
 
 *:focus {
-  outline: 2px dashed var(--text-color);
+  outline: 2px dashed var(--outline-color);
   outline-offset: 3px;
 }
 
